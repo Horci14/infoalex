@@ -1,0 +1,24 @@
+.nav{
+    position: fixed;
+    background-color: rgb(19, 19, 73);
+    z-index: 5;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.Logo{
+    height: 60%;
+    margin-right: 40px;
+    display: flex;
+    color: white;
+    font-size: 2vw;
+}
+
+@media  screen and (max-width: 768px) {
+    .Logo{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,158 @@
+#contact{
+    width: 100%;
+    height: 110vh;
+    background-color: rgb(80, 80, 213);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form{
+    background-color: orange;
+    width: 40%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(61, 61, 131, 0.337);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 20px;
+}
+
+.formTitle{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+input, textarea{
+    background: none;
+    border: none;
+    border-bottom: solid black 3px;
+    color: white;
+    width: 80%;
+    height: 8%;
+    padding: 10px;
+}
+
+input::placeholder, textarea::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input:hover, textarea:hover{
+    background-color: rgb(255, 177, 31);
+}
+
+input:focus, textarea:focus{
+    background-color: rgb(255, 185, 55);
+    outline: none;
+}
+
+#check{
+    width: 40px;
+    margin-right: 20px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+#question{
+    height: 25%;
+}
+
+.submit{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.submitButton{
+    width: auto;
+    height: auto;
+    background-color: rgb(19, 19, 73);
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(177, 115, 0);
+    cursor: pointer;
+}
+
+.submitButton:hover{
+    box-shadow: none;
+    transform: translate(5px, 5px);
+}
+
+.check{
+    display: flex;
+    width: 60%;
+    align-items: center;
+}
+
+.whatsapp{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    background-color: rgb(19, 19, 73);
+    border-radius: 10px;
+}
+
+.whatsapp a{
+    color: orange;
+    font-size: 3vw;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.whatsapp a:hover{
+    color: greenyellow;
+}
+
+.whatsapp img{
+    transform: translateY(50%) translateX(10px);
+}
+
+@media screen and (max-width: 768px){
+    #contact{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    form{
+        width: 90%;
+        margin: 40px;
+        height: 100vh;
+        font-size: 20px;
+    }
+
+    .whatsapp{
+        width: 90%;
+        margin: 40px;
+        height: 40vh;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .whatsapp a{
+        font-size: 20px;
+    }
+}

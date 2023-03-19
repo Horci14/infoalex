@@ -1,0 +1,115 @@
+.landing{
+    width: 100%;
+    height: 85vh;
+    background-color: rgb(19, 19, 73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.title{
+    color: white;
+    margin: 0;
+    width: 50%;
+    font-weight: 700;
+}
+
+.title h1{
+    color: #ffa500;
+    text-transform: uppercase;
+    font-size: 6vw;
+    display: flex;
+    
+}
+
+.title h2{
+    font-size: 3vw;
+}
+
+.title .question{
+    color: white;
+    margin-left: 2vw;
+}
+
+.ComputerPNG{
+    width: 40%;
+    transform: translateY(10vh);
+}
+
+.ArrowDown{
+    width: 5vw;
+    height: 5vw;
+    background: orange;
+    font-size: 3vw;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    animation: up-down 1.5s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.ArrowDown:hover{
+    color: orange;
+    background: white;
+    cursor: pointer;
+    animation: freeze;
+    transition: 0.3s;
+}
+
+.ArrowDown div{
+    margin: auto;
+}
+
+.ArrowBox{
+    margin-top: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    .title{
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title h1{
+        font-size: 10vw;
+    }
+
+    .title h2{
+        font-size: 6vw;
+        float: left;
+    }
+
+    .ArrowDown{
+        width: 9vw;
+        height: 9vw;
+        font-size: 6vw;
+    }
+    .ComputerPNG{
+        transform: translateX(80%);
+        width: 100%;
+    }
+}
+
+@keyframes up-down{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
