@@ -7,8 +7,8 @@ const Footer = () => {
     return(
         <div id='footer'>
             <div>Creato da ALEXANDRU HORCEAG</div>
-            <div><Link to='/privacy'>PRIVACY POLICY</Link></div>
-            <div><Link to='/'>HOME</Link></div>
+            <div><Link to='/infoalex/privacy'>PRIVACY POLICY</Link></div>
+            <div><Link to='/infoalex'>HOME</Link></div>
         </div>
     )
 }
